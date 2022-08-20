@@ -1,0 +1,71 @@
+   
+        .my-nav{
+            position: absolute;
+            z-index: 10;
+            width: 100%;
+            }
+            
+            .carousel-item {
+              height: 100vh;
+              background: no-repeat center center scroll;
+              -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+              background-size: cover;
+            }
+            body{
+              background-color: wheat;
+            }
+            nav{
+            background: transparent;
+            font-size: 10px;
+            text-align: center;
+            
+            }
+            a.navbar-brand{
+            display: block;
+            margin-right: 50px;
+            }
+            a.dropdown-item{
+               display: block;
+               font-size: 10px;
+            }
+            li.nav-item:hover ul.dropdown-menu{
+                display: block;
+            }
+            a.nav-link.dropdown:hover{
+                display: block;
+               
+            }
+            
+           .d-block{
+               position: absolute;
+               height: 100vh;
+               width: 100%;
+           }
+           
+    .navbar-nav .dropdown-menu{
+        background: chartreuse;
+    }
+        img{
+            width: 60%;
+            display: inline-block;
+            float: left;
+        }
+        .logo{
+        display: inline-block;
+        margin-left: 25px;
+        width:15%;
+        }
+        .testing{
+            display: inline-block;
+        vertical-align: top;
+        width: 75%;
+        text-align: center;
+        }
+        div{
+            color: aliceblue;
+        }
+        a{
+            color: aliceblue;
+        }
