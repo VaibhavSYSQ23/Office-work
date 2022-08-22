@@ -44,35 +44,36 @@
                width: 100%;
            }
            
-    .navbar-nav .dropdown-menu{
-        background: chartreuse;
-    }
-        img{
+            .navbar-nav .dropdown-menu{
+            background: chartreuse;
+            }
+            img{
             width: 60%;
             display: inline-block;
             float: left;
-        }
-        .logo{
-        display: inline-block;
-        margin-left: 25px;
-        width:15%;
-        }
-        .testing{
+            }
+            .logo{
             display: inline-block;
-        vertical-align: top;
-        width: 75%;
-        text-align: center;
-        }
-        div{
+            margin-left: 25px;
+            width:15%;
+            }
+            .testing{
+            display: inline-block;
+            vertical-align: top;
+            width: 75%;
+            text-align: center;
+            }
+            div{
             color: aliceblue;
-        }
-        a{
+            }
+            a{
             color: aliceblue;
-        }
-        .navbar-collapse{
+            }
+            .navbar-collapse{
             flex-grow: 0.6;
-        }
-        .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl
-        {
+            }
+            .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl
+            {
             width: 70%;
-        }
+            }
+            
