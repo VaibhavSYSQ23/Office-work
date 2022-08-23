@@ -32,9 +32,8 @@
     }
     li.nav-item:hover ul.dropdown-menu{
         display: block;
-        
+        border-radius: 15px;
     }
-    
     .d-block{
        position: absolute;
        height: 100vh;
