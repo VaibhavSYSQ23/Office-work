@@ -1,0 +1,15 @@
+#section1 span{
+    width: 140px;
+    margin-top: 50px;
+    border-top: 50px solid #555;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+}
+#section1 span p{
+    position: relative;
+    top: -4vw;
+    font-size: 3vw;
+}
+
+
+  <span><p>hello</p></span>

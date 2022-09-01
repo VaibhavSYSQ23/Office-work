@@ -1,0 +1,30 @@
+1st portion:	
+	multi dropdown menu when hover. 
+	navbar design hover.
+	carousel button on hover effect.
+	mouse button scroll to.
+	carousel slider button auto
+		onhover effect.
+2nd portion:
+	welcome to sysquare background trapezoid shape.
+	icon progress bar on scroll fill effect.
+3rd portion: 
+	slider and its content is still pending.
+5th portion: 
+	our industries half portion is pending.
+6th portion: 
+	on image hover text appear effect.
+	button on the first top left image.
+7th portion:
+	gif based portion is pending.
+8th portion: removed.
+9th portion: 
+	right part is done but don't know what to do when the screen size changes.
+	background image.
+	left side hexagon shape and alignment is pending and hover and design is pending.
+10th portion:
+	the whole portion is pending.
+11th portion: 
+	complete.
+12th portion: 
+	need consultation form part is pending. 		
