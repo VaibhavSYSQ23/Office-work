@@ -1,1 +1,99 @@
 https://codepen.io/ash_s_west/embed/ZEJpWoq?height=265&theme-id=dark&default-tab=css,result for the logo slider in the bottom of the page of the first portion.
+
+
+html code .
+
+<div class="slider-container">
+    <ul class="slider">
+      <li class="slider__slide">
+        <div class="slide__content">1</div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">2</div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">3</div>
+      </li>
+     <li class="slider__slide">
+        <div class="slide__content">1</div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">2</div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">3</div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">1</div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">2</div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">3</div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">1</div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">2</div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">3</div>
+      </li>
+     </ul>
+  </div>
+  
+  
+  
+  css style.
+  
+  @keyframes scroll {
+  0% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(calc((0px - var(--slider-inner-width)) - 5%));
+  }
+}
+.slider {
+  -webkit-transform: translate3d(0, 0, 0);
+  animation: scroll linear infinite var(--slider-speed);
+  width: calc(2 * var(--slider-inner-width));
+  transition: animation-play-state ease 0.3s;
+}
+.slider:hover {
+  animation-play-state: paused;
+}
+
+.slider-container {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.slider-container .slider {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+.slider-container .slider__slide {
+  height: 100px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  border-right: solid #82a972 10px;
+  background: black;
+}
+.slider-container .slider__slide:hover {
+  background: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+.slider-container .slider__slide .slide__content {
+  color: white;
+  font-size: 80px;
+}
