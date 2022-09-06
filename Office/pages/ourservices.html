@@ -18,17 +18,35 @@
         .carousel-inner .carousel-item-start.active, .carousel-inner .carousel-item-prev{transform: translateX(-25%)}}
         .carousel-inner .carousel-item-end, .carousel-inner .carousel-item-start{transform: translateX(0)}
         .row{
-            background-color: aqua;
+            border-radius: 10px;
+            background: linear-gradient(180deg, #2D80FF 0%, #205EBC 100%);
         }
         .card{
             background: transparent;
             border: transparent;
+            height: 80px;
+            align-content: center;
         }
-        .card > a {
+        .card > button {
             text-decoration: none;
             color: white;
+            text-align: center;
+            margin-top: 30px;
+            border: none;
+            background: none;
         }
-       
+        .carousel-control-next{
+            width: 2%;
+            
+        }
+        .carousel-control-prev{
+            width: 2%;
+            
+        }
+        ion-icon{
+            background-color: red;
+            border-radius: 50px;
+        }
     </style>
 </head>
 <body>
@@ -40,42 +58,42 @@
                         <div class="carousel-item active"> 
                             <div class="col-md-3"> 
                                 <div class="card">
-                                    <a href="#">link 1</a>
+                                    <button>link 1</button>
                                   </div>
                             </div> 
                         </div> 
                         <div class="carousel-item"> 
                             <div class="col-md-3"> 
                                 <div class="card">
-                                    <a href="#">link 2</a>         
+                                    <button>link 2</button>        
                                   </div>
                             </div> 
                         </div> 
                         <div class="carousel-item"> 
                             <div class="col-md-3"> 
                                 <div class="card"> 
-                                    <a href="#">link 3</a>
+                                    <button>link 3</button>
                                 </div> 
                             </div> 
                         </div> 
                         <div class="carousel-item">
                              <div class="col-md-3"> 
                                 <div class="card"> 
-                                    <a href="#">link 4</a>
+                                    <button>link 4</button>
                                 </div> 
                             </div> 
                         </div> 
                         <div class="carousel-item"> 
                             <div class="col-md-3"> 
                                 <div class="card"> 
-                                    <a href="#">link 5</a> 
+                                    <button>link 5</button>
                                 </div> 
                             </div> 
                         </div> 
                         <div class="carousel-item"> 
                             <div class="col-md-3"> 
                                 <div class="card"> 
-                                    <a href="#">link 6</a>
+                                    <button>link 6</button>
                                 </div> 
                             </div> 
                         </div> 

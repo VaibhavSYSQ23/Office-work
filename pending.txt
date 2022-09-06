@@ -3,17 +3,14 @@
 	navbar design hover.
 	carousel button on hover effect.
 	mouse button scroll to.
-	carousel slider button auto
+	carousel slider button auto logo 
 		onhover effect.
-2nd portion:
-	welcome to sysquare background trapezoid shape.
-	icon progress bar on scroll fill effect.
+2nd portion: removed
 3rd portion: 
 	slider and its content is still pending.
 5th portion: 
-	our industries half portion is pending.
-6th portion: 
-	on image hover text appear effect.
+	our industries image display is pending
+6th portion:
 	button on the first top left image.
 7th portion:
 	gif based portion is pending.
@@ -27,4 +24,4 @@
 11th portion: 
 	complete.
 12th portion: 
-	need consultation form part is pending. 		
+	complete. 		
