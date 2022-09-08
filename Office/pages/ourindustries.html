@@ -28,7 +28,15 @@
         div.card.shadow .list-group.list-group-flush{
             border-radius: 20px;
         }
-
+        @media only screen and (max-width: 1000px){
+            .col#Image{
+                display: none;
+            }
+            .col{
+                margin-top: 20px;
+            
+            }
+        }
     </style>
 </head>
 <body>
@@ -61,7 +69,7 @@
                     </li>
                     </ul>
                   </div></div>
-                <div class="col"><!--this is the place where the image will display--></div>
+                <div class="col" id="Image"><!--this is the place where the image will display--></div>
                 <div class="col">
                     <div class="card shadow " style="width: 18rem;">
                     <ul class="list-group list-group-flush">
