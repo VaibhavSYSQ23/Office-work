@@ -12,9 +12,7 @@
 	our industries image display is pending
 6th portion:
 	button on the first top left image. button on the images will be displayed when hover.
-7th portion:
-	gif based portion is pending. 
-	(only gif is required)
+7th portion:complete
 8th portion: removed.
 9th portion: 
 	right part is done but don't know what to do when the screen size changes. (i will shift the right portion to the bottom)
