@@ -11,17 +11,17 @@
 5th portion: 
 	our industries image display is pending
 6th portion:
-	button on the first top left image.
+	button on the first top left image. button on the images will be displayed when hover.
 7th portion:
-	gif based portion is pending.
+	gif based portion is pending. 
+	(only gif is required)
 8th portion: removed.
 9th portion: 
-	right part is done but don't know what to do when the screen size changes.
-	background image.
+	right part is done but don't know what to do when the screen size changes. (i will shift the right portion to the bottom)
 	left side hexagon shape and alignment is pending and hover and design is pending.
-10th portion:
-	the whole portion is pending.
+10th portion: number incrementer on screen view.
+	problem with the image alinment.
 11th portion: 
-	complete.
+	complete. the text and get in touch alignment is not perfect.
 12th portion: 
-	complete. 		
+	complete.  button of message and on top is pending		
