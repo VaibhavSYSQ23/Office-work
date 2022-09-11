@@ -4,125 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/5.5.0/css/foundation.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+  <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">  
+  <title>Our services</title>
     <style>
-        @media (max-width: 767px){
-        .carousel-inner .carousel-item >div{display: none}
-        .carousel-inner .carousel-item >div:first-child{display: block}}
-        .carousel-inner .carousel-item.active, .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev{display: flex}
-        @media (min-width: 768px){
-        .carousel-inner .carousel-item-end.active, .carousel-inner .carousel-item-next{transform: translateX(25%)}
-        .carousel-inner .carousel-item-start.active, .carousel-inner .carousel-item-prev{transform: translateX(-25%)}}
-        .carousel-inner .carousel-item-end, .carousel-inner .carousel-item-start{transform: translateX(0)}
-        .row{
-            border-radius: 10px;
-            background: linear-gradient(180deg, #2D80FF 0%, #205EBC 100%);
-        }
-        .card{
-            background: transparent;
-            border: transparent;
-            height: 80px;
-            align-content: center;
-        }
-        .card > button {
-            text-decoration: none;
-            color: white;
-            text-align: center;
-            margin-top: 30px;
-            border: none;
-            background: none;
-        }
-        .carousel-control-next{
-            width: 2%;
-            
-        }
-        .carousel-control-prev{
-            width: 2%;
-            
-        }
-        ion-icon{
-            background-color: red;
-            border-radius: 50px;
-        }
+      body { background-color: #aacccc }
+
+.js .slider-single > div:nth-child(1n+2) { display: none }
+
+.js .slider-single.slick-initialized > div:nth-child(1n+2) { display: block }
+
+h3 {
+	background: #f0f0f0;
+	font-size: 2.25rem;
+	margin: .5rem;
+	padding: 2%;
+	position: relative;
+	text-align: center;
+  background-color: transparent;
+}
+.slick-next{
+  right: -10px !important;
+}
+.slick-prev{
+  left: -10px;
+}
+.slider-single h3 {
+	line-height: 10rem;
+}
+
+.slider-nav h3::before {
+	content: "";
+	display: block;
+	padding-top: 75%;
+}
+
+.slider-nav h3 span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  border-bottom-color: aqua;
+}
+
+.slider-nav .slick-slide { cursor: pointer; }
+
+.slick-slide.is-active h3 {
+	color: blue;
+  border-bottom-color: chartreuse;
+
+	
+}
     </style>
 </head>
 <body>
-    <div class="container text-center my-3">
-        <h2 class="font-weight-light">Bootstrap Multi Slide Carousel</h2>
-            <div class="row mx-auto my-auto justify-content-center"> 
-                <div id="recipeCarousel" class="carousel" > 
-                    <div class="carousel-inner" role="listbox"> 
-                        <div class="carousel-item active"> 
-                            <div class="col-md-3"> 
-                                <div class="card">
-                                    <button>link 1</button>
-                                  </div>
-                            </div> 
-                        </div> 
-                        <div class="carousel-item"> 
-                            <div class="col-md-3"> 
-                                <div class="card">
-                                    <button>link 2</button>        
-                                  </div>
-                            </div> 
-                        </div> 
-                        <div class="carousel-item"> 
-                            <div class="col-md-3"> 
-                                <div class="card"> 
-                                    <button>link 3</button>
-                                </div> 
-                            </div> 
-                        </div> 
-                        <div class="carousel-item">
-                             <div class="col-md-3"> 
-                                <div class="card"> 
-                                    <button>link 4</button>
-                                </div> 
-                            </div> 
-                        </div> 
-                        <div class="carousel-item"> 
-                            <div class="col-md-3"> 
-                                <div class="card"> 
-                                    <button>link 5</button>
-                                </div> 
-                            </div> 
-                        </div> 
-                        <div class="carousel-item"> 
-                            <div class="col-md-3"> 
-                                <div class="card"> 
-                                    <button>link 6</button>
-                                </div> 
-                            </div> 
-                        </div> 
-                    </div> 
-                    <a class="carousel-control-prev bg-transparent " href="#recipeCarousel" role="button" data-bs-slide="prev"> 
-                        <ion-icon name="arrow-back-circle-outline"></ion-icon></a> 
-                    <a class="carousel-control-next bg-transparent " href="#recipeCarousel" role="button" data-bs-slide="next"> 
-                        <ion-icon name="arrow-forward-circle-outline"></ion-icon></span> </a> 
-                </div> 
-                </div> 
-                <script>
-                    let items = document.querySelectorAll('.carousel .carousel-item')
-                    items.forEach((el) => {
-                        const minPerSlide = 4
-                        let next = el.nextElementSibling
-                        for (var i=1; i<minPerSlide; i++) {
-                            if (!next) {
-                                // wrap carousel by using first child
-                            	next = items[0]
-                          	}
-                            let cloneChild = next.cloneNode(true)
-                            el.appendChild(cloneChild.children[0])
-                            next = next.nextElementSibling
-                        }
-                    })
-                </script>
-                <!--for ion icon-->
-                <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-                <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</div>
-</body>
+  <div id="page">
+    <div class="row">
+      <div class="column small-11 small-centered">
+        <h2>Slick Slider Syncing</h2>
+        
+        <div class="slider slider-nav" style="background: linear-gradient(180deg, #2D80FF 0%, #205EBC 100%); border-radius: 20px;">
+          <div><h3><span>1</span></h3></div>
+          <div><h3><span>2</span></h3></div>
+          <div><h3><span>3</span></h3></div>
+          <div><h3><span>4</span></h3></div>
+          <div><h3><span>5</span></h3></div>
+          <div><h3><span>6</span></h3></div>
+          <div><h3><span>7</span></h3></div>
+          <div><h3><span>8</span></h3></div>
+          <div><h3><span>9</span></h3></div>
+          <div><h3><span>10</span></h3></div>
+        </div>
+        <div class="slider slider-single" style="background-color:#FFFFFF;top: -28px;
+        z-index: -1; position: relative; margin: 30px; border-radius: 0px 0px 10px 10px; ">
+          <div><h3>1</h3></div>
+          <div><h3>2</h3></div>
+          <div><h3>3</h3></div>
+          <div><h3>4</h3></div>
+          <div><h3>5</h3></div>
+          <div><h3>6</h3></div>
+          <div><h3>7</h3></div>
+          <div><h3>8</h3></div>
+          <div><h3>9</h3></div>
+          <div><h3>10</h3></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!--slick slider js-->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <!--here the custom slick slider script will come.-->
+    <script src="/Office/pages/ourservices.js"></script>
+    </body>
 </html>
