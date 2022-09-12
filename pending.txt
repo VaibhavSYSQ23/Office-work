@@ -2,12 +2,12 @@
 	multi dropdown menu when hover. 
 	navbar design hover.
 	carousel button on hover effect.
-	mouse button scroll to.
-	carousel slider button auto logo 
+	mouse button scroll to. done
+	carousel slider button auto logo. done 
 		onhover effect.
 2nd portion: removed
 3rd portion: 
-	slider and its content is still pending.
+	slider and its content is created and tested but some problem in integration
 5th portion: 
 	our industries image display is pending
 6th portion:
@@ -17,7 +17,7 @@
 9th portion: 
 	right part is done but don't know what to do when the screen size changes. (i will shift the right portion to the bottom)
 	left side hexagon shape and alignment is pending and hover and design is pending.
-10th portion: number incrementer on screen view.
+10th portion: number incrementer on screen view. done
 	problem with the image alinment.
 11th portion: 
 	complete. the text and get in touch alignment is not perfect.
