@@ -53,62 +53,97 @@
       .filled-s:hover {
         height: 200px;
         width: 200px;
+        transition: 2s;
+      }
+      .filled-s:hover p{
+        font-size: 20px;
+        transition: 2s;
       }
       .top-col{
         display: flex;
         position: inherit;
-        
+      }
+      .hover-text{
+        display: none;
       }
     </style>
 </head>
 <body style="background-color: gray;">
-    <section class="container-fluid align-center" style="position: relative;
+    <section class="container-fluid" style="position: relative;
     top: 100px;">
         <div class="row">
             <div class="col-md">
-                <h6>Triangle Down CSS</h6>
+                
                 <div class="top-col" >
                 <div class="hexagon-s border-s" style="position: relative; top: 75px;">
                     <div class="hexagon-s filled-s">
-                      <h2 style="text-align: center; max-width: 100px">icons</h2>
+                      <p style="text-align: center; max-width: 100px">Front-End</p>
                     </div>
                   </div>
                   <div class="hexagon-s border-s">
                     <div class="hexagon-s filled-s">
-                      <h2 style="text-align: center; max-width: 100px">icons</h2>
+                      <p style="text-align: center; max-width: 100px">Back-end</p>
                     </div>
                   </div>
                   <div class="hexagon-s border-s" style="position: relative; top: 75px;">
                     <div class="hexagon-s filled-s">
-                      <h2 style="text-align: center; max-width: 100px">icons</h2>
+                      <p style="text-align: center; max-width: 100px">AI</p>
                     </div>
                   </div>
                 </div>
                 
-                <div class="hexagon border" style="position: relative; align-items: center;">
+                <div class="hexagon border" style=" display: flex;position: relative; align-items: center;">
                   <div class="hexagon filled">
-                    <h2 style="text-align: center; max-width: 100px">icons</h2>
+                    <div style="text-align: center; max-width: 100px;"><div id="icons-text">
+                      <div class="hover-text"><li>hello1</li>
+                        <li>hello1</li>
+                        <li>hello1</li>
+                        <li>hello1</li>
+                      </div>
+                      <div class="hover-text"><li>hello2</li>
+                        <li>hello2</li>
+                        <li>hello2</li>
+                        <li>hello2</li></div>
+                      <div class="hover-text"><li>hello3</li>
+                        <li>hello3</li>
+                        <li>hello3</li>
+                        <li>hello3</li></div>
+                      <div class="hover-text"><li>hello4</li>
+                        <li>hello4</li>
+                        <li>hello4</li>
+                        <li>hello4</li></div>
+                      <div class="hover-text"><li>hello5</li>
+                        <li>hello5</li>
+                        <li>hello5</li>
+                        <li>hello5</li></div>
+                      <div class="hover-text"><li>hello6</li>
+                        <li>hello6</li>
+                        <li>hello6</li>
+                        <li>hello6</li></div>
+                      </div></div>
                   </div>
                 </div>
                 
                 <div class="top-col">
                     <div class="hexagon-s border-s" style="position: relative; top: -75px;">
                         <div class="hexagon-s filled-s">
-                          <h2 style="text-align: center; max-width: 100px">icons</h2>
+                          <p style="text-align: center; max-width: 100px">ML</p>
                         </div>
                       </div>
                       <div class="hexagon-s border-s">
                         <div class="hexagon-s filled-s">
-                          <h2 style="text-align: center; max-width: 100px">icons</h2>
+                          <p style="text-align: center; max-width: 100px">SAP</p>
                         </div>
                       </div>
                       <div class="hexagon-s border-s" style="position: relative; top: -75px;">
                         <div class="hexagon-s filled-s">
-                          <h2 style="text-align: center; max-width: 100px">icons</h2>
+                          <p style="text-align: center; max-width: 100px">Testing</p>
                         </div>
                       </div>
                     </div>
-             </div>   
+             </div> 
+             
+
             <div class="col-md">
                 <p class="text-white">// TECHNOLOGY INDEX</p>
                 <h3 class="text-white">Improve And Innovate <br> With The Tech Trends</h3>
@@ -123,14 +158,27 @@
         </div>
         
     </section>
+    <!--jQuery script-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!--ion icon js-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+      $('.border-s').hover( function() { 
+    $('.hover-text').eq($('.border-s').index($(this))).show();
+ } , function() { 
+    $('.hover-text').eq($('.border-s').index($(this))).hide();
+ });
+    </script>
 </body>
 </html>
 
 
-<!--background: red;
-            -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
-            clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);-->
+<!--
+  $('.border-s').hover( function() { 
+    $('.hover-text').eq($('.border-s').index($(this))).show();
+ } , function() { 
+    $('.hover-text').eq($('.border-s').index($(this))).hide();
+ });
+-->
