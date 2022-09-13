@@ -9,29 +9,29 @@
   <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">  
   <title>Our services</title>
     <style>
-.js .slider-single > div:nth-child(1n+2) { display: none }
+.row .js .slider-single > div:nth-child(1n+2) { display: none }
 
-.js .slider-single.slick-initialized > div:nth-child(1n+2) { display: block }
+.row .js .slider-single.slick-initialized > div:nth-child(1n+2) { display: block }
 
-h3 {
+.row h3 {
 	background: #f0f0f0;
   padding: 2%;
 	position: relative;
   background-color: transparent;
 }
-.slick-next{
+.row .slick-next{
   right: -10px;
 }
-.slick-prev{
+.row .slick-prev{
   left: -10px;
 }
-.slider-nav h3::before {
+.row .slider-nav h3::before {
 	content: "";
 	display: block;
 	padding-top: 55%;
 }
 
-.slider-nav h3 span {
+.row .slider-nav h3 span {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -39,33 +39,30 @@ h3 {
   border-bottom-color: aqua;
 }
 
-.slider-nav .slick-slide { cursor: pointer; }
+.row .slider-nav .slick-slide { cursor: pointer; }
 
-.slick-slide.is-active h3 {
+.row .slick-slide.is-active h3 {
 	color: #FFFFFF;
-  border-bottom-color: chartreuse;	
+  	
 }
-.flex-container{
+.row .flex-container{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.flex-container > div {
- 
+.row .flex-container > div {
   margin: 3px;
   padding: 1px;
   font-size: 10px;
 }
-#page{
-  
-}
+
     </style>
 </head>
 <body>
   <div id="page">
     <div class="row">
       <div class="column small-11 small-centered">
-        <h2>Slick Slider Syncing</h2>
+        
         
         <div class="slider slider-nav shadow" style="background: linear-gradient(180deg, #2D80FF 0%, #205EBC 100%); border-radius: 20px;">
           <div><h3><span style="font-size: 10px;">Software Development</span></h3></div>
@@ -79,166 +76,166 @@ h3 {
           <div><h3><span style="font-size: 10px;">Dating Application</span></h3></div>
           <div><h3><span style="font-size: 10px;">Auction site</span></h3></div>
         </div>
-        <div class="slider slider-single shadow" style="background-color:#FFFFFF;top: -28px;
+        <div class="slider slider-single " style="background-color: white; top: -28px;
         z-index: -1; position: relative; margin: 30px; border-radius: 0px 0px 10px 10px; ">
           <div><h3>Software Development</h3>
             <p style="padding-left: 10px; padding-right: 10px;">The development of reliable and scalable software solutions for any OS, browser and device. We bring together deep industry expertise and the latest IT advancements to deliver custom solutions and products that perfectly fit the needs and behavior of their users.</p>
             <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon> hello1</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello2</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello3</p></div>
+              <div><p> hello11</p></div>
+              <div><p>hello2</p></div>
+              <div><p>hello3</p></div>
             </div>
             <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello1</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello2</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello3</p></div>
+              <div><p>hello1</p></div>
+              <div><p>hello2</p></div>
+              <div><p>hello3</p></div>
             </div>
             <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello1</p></div>
-            </div>
-          </div>
-          <div><h3>Software Development</h3>
-            <p style="padding-left: 10px; padding-right: 10px;">The development of reliable and scalable software solutions for any OS, browser and device. We bring together deep industry expertise and the latest IT advancements to deliver custom solutions and products that perfectly fit the needs and behavior of their users.</p>
-            <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon> hello1</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello2</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello3</p></div>
-            </div>
-            <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello1</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello2</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello3</p></div>
-            </div>
-            <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello1</p></div>
+              <div><p>hello1</p></div>
             </div>
           </div>
           <div><h3>Software Development</h3>
             <p style="padding-left: 10px; padding-right: 10px;">The development of reliable and scalable software solutions for any OS, browser and device. We bring together deep industry expertise and the latest IT advancements to deliver custom solutions and products that perfectly fit the needs and behavior of their users.</p>
             <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon> hello1</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello2</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello3</p></div>
+              <div><p> hello12</p></div>
+              <div><p>hello2</p></div>
+              <div><p>hello3</p></div>
             </div>
             <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello1</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello2</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello3</p></div>
+              <div><p>hello1</p></div>
+              <div><p>hello2</p></div>
+              <div><p>hello3</p></div>
             </div>
             <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello1</p></div>
-            </div>
-          </div>
-          <div><h3>Software Development</h3>
-            <p style="padding-left: 10px; padding-right: 10px;">The development of reliable and scalable software solutions for any OS, browser and device. We bring together deep industry expertise and the latest IT advancements to deliver custom solutions and products that perfectly fit the needs and behavior of their users.</p>
-            <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon> hello1</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello2</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello3</p></div>
-            </div>
-            <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello1</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello2</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello3</p></div>
-            </div>
-            <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello1</p></div>
+              <div><p>hello1</p></div>
             </div>
           </div>
           <div><h3>Software Development</h3>
             <p style="padding-left: 10px; padding-right: 10px;">The development of reliable and scalable software solutions for any OS, browser and device. We bring together deep industry expertise and the latest IT advancements to deliver custom solutions and products that perfectly fit the needs and behavior of their users.</p>
             <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon> hello1</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello2</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello3</p></div>
+              <div><p> hello14</p></div>
+              <div><p>hello2</p></div>
+              <div><p>hello3</p></div>
             </div>
             <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello1</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello2</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello3</p></div>
+              <div><p>hello1</p></div>
+              <div><p>hello2</p></div>
+              <div><p>hello3</p></div>
             </div>
             <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello1</p></div>
-            </div>
-          </div>
-          <div><h3>Software Development</h3>
-            <p style="padding-left: 10px; padding-right: 10px;">The development of reliable and scalable software solutions for any OS, browser and device. We bring together deep industry expertise and the latest IT advancements to deliver custom solutions and products that perfectly fit the needs and behavior of their users.</p>
-            <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon> hello1</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello2</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello3</p></div>
-            </div>
-            <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello1</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello2</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello3</p></div>
-            </div>
-            <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello1</p></div>
+              <div><p>hello1</p></div>
             </div>
           </div>
           <div><h3>Software Development</h3>
             <p style="padding-left: 10px; padding-right: 10px;">The development of reliable and scalable software solutions for any OS, browser and device. We bring together deep industry expertise and the latest IT advancements to deliver custom solutions and products that perfectly fit the needs and behavior of their users.</p>
             <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon> hello1</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello2</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello3</p></div>
+              <div><p> hello13</p></div>
+              <div><p>hello2</p></div>
+              <div><p>hello3</p></div>
             </div>
             <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello1</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello2</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello3</p></div>
+              <div><p>hello1</p></div>
+              <div><p>hello2</p></div>
+              <div><p>hello3</p></div>
             </div>
             <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello1</p></div>
-            </div>
-          </div>
-          <div><h3>Software Development</h3>
-            <p style="padding-left: 10px; padding-right: 10px;">The development of reliable and scalable software solutions for any OS, browser and device. We bring together deep industry expertise and the latest IT advancements to deliver custom solutions and products that perfectly fit the needs and behavior of their users.</p>
-            <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon> hello1</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello2</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello3</p></div>
-            </div>
-            <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello1</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello2</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello3</p></div>
-            </div>
-            <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello1</p></div>
+              <div><p>hello1</p></div>
             </div>
           </div>
           <div><h3>Software Development</h3>
             <p style="padding-left: 10px; padding-right: 10px;">The development of reliable and scalable software solutions for any OS, browser and device. We bring together deep industry expertise and the latest IT advancements to deliver custom solutions and products that perfectly fit the needs and behavior of their users.</p>
             <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon> hello1</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello2</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello3</p></div>
+              <div><p> hello1</p></div>
+              <div><p>hello2</p></div>
+              <div><p>hello3</p></div>
             </div>
             <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello1</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello2</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello3</p></div>
+              <div><p>hello1</p></div>
+              <div><p>hello2</p></div>
+              <div><p>hello3</p></div>
             </div>
             <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello1</p></div>
+              <div><p>hello1</p></div>
             </div>
           </div>
           <div><h3>Software Development</h3>
             <p style="padding-left: 10px; padding-right: 10px;">The development of reliable and scalable software solutions for any OS, browser and device. We bring together deep industry expertise and the latest IT advancements to deliver custom solutions and products that perfectly fit the needs and behavior of their users.</p>
             <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon> hello1</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello2</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello3</p></div>
+              <div><p> hello1</p></div>
+              <div><p>hello2</p></div>
+              <div><p>hello3</p></div>
             </div>
             <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello1</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello2</p></div>
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello3</p></div>
+              <div><p>hello1</p></div>
+              <div><p>hello2</p></div>
+              <div><p>hello3</p></div>
             </div>
             <div class="flex-container">
-              <div><p><ion-icon name="diamond-outline"></ion-icon>hello1</p></div>
+              <div><p>hello1</p></div>
+            </div>
+          </div>
+          <div><h3>Software Development</h3>
+            <p style="padding-left: 10px; padding-right: 10px;">The development of reliable and scalable software solutions for any OS, browser and device. We bring together deep industry expertise and the latest IT advancements to deliver custom solutions and products that perfectly fit the needs and behavior of their users.</p>
+            <div class="flex-container">
+              <div><p> hello1</p></div>
+              <div><p>hello2</p></div>
+              <div><p>hello3</p></div>
+            </div>
+            <div class="flex-container">
+              <div><p>hello1</p></div>
+              <div><p>hello2</p></div>
+              <div><p>hello3</p></div>
+            </div>
+            <div class="flex-container">
+              <div><p>hello1</p></div>
+            </div>
+          </div>
+          <div><h3>Software Development</h3>
+            <p style="padding-left: 10px; padding-right: 10px;">The development of reliable and scalable software solutions for any OS, browser and device. We bring together deep industry expertise and the latest IT advancements to deliver custom solutions and products that perfectly fit the needs and behavior of their users.</p>
+            <div class="flex-container">
+              <div><p> hello1</p></div>
+              <div><p>hello2</p></div>
+              <div><p>hello3</p></div>
+            </div>
+            <div class="flex-container">
+              <div><p>hello1</p></div>
+              <div><p>hello2</p></div>
+              <div><p>hello3</p></div>
+            </div>
+            <div class="flex-container">
+              <div><p>hello1</p></div>
+            </div>
+          </div>
+          <div><h3>Software Development</h3>
+            <p style="padding-left: 10px; padding-right: 10px;">The development of reliable and scalable software solutions for any OS, browser and device. We bring together deep industry expertise and the latest IT advancements to deliver custom solutions and products that perfectly fit the needs and behavior of their users.</p>
+            <div class="flex-container">
+              <div><p> hello1</p></div>
+              <div><p>hello2</p></div>
+              <div><p>hello3</p></div>
+            </div>
+            <div class="flex-container">
+              <div><p>hello1</p></div>
+              <div><p>hello2</p></div>
+              <div><p>hello3</p></div>
+            </div>
+            <div class="flex-container">
+              <div><p>hello1</p></div>
+            </div>
+          </div>
+          <div><h3>Software Development</h3>
+            <p style="padding-left: 10px; padding-right: 10px;">The development of reliable and scalable software solutions for any OS, browser and device. We bring together deep industry expertise and the latest IT advancements to deliver custom solutions and products that perfectly fit the needs and behavior of their users.</p>
+            <div class="flex-container">
+              <div><p> hello1</p></div>
+              <div><p>hello2</p></div>
+              <div><p>hello3</p></div>
+            </div>
+            <div class="flex-container">
+              <div><p>hello1</p></div>
+              <div><p>hello2</p></div>
+              <div><p>hello3</p></div>
+            </div>
+            <div class="flex-container">
+              <div><p>hello1</p></div>
             </div>
           </div>
         </div>
@@ -249,11 +246,9 @@ h3 {
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <!--slick slider js-->
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
     <!--here the custom slick slider script will come.-->
     <script src="/Office/pages/ourservices.js"></script>
-    <!--ion icon js-->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   
     </body>
 </html>
