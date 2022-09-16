@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Our Industries</title>
     <style>
         #section4 #FirstPortion{
@@ -69,7 +70,33 @@
                     </li>
                     </ul>
                   </div></div>
-                <div class="col" id="Image"><!--this is the place where the image will display--></div>
+                <div class="col" id="Image"><!--this is the place where the image will display-->
+                <div class="show-image">
+                    <img src="/images/Group 11.svg" alt="">
+                </div>
+                <div class="show-image">
+                    <img src="/images/Group 11.svg" alt="">
+                </div>
+                <div class="show-image">
+                    <img src="/images/Group 11.svg" alt="">
+                </div>
+                <div class="show-image">
+                    <img src="/images/Group 11.svg" alt="">
+                </div>
+                <div class="show-image">
+                    <img src="/images/Group 11.svg" alt="">
+                </div>
+                <div class="show-image">
+                    <img src="/images/Group 11.svg" alt="">
+                </div>
+                <div class="show-image">
+                    <img src="/images/Group 11.svg" alt="">
+                </div>
+                <div class="show-image">
+                    <img src="/images/Group 11.svg" alt="">
+                </div>
+                
+                </div>
                 <div class="col">
                     <div class="card shadow " style="width: 18rem;">
                     <ul class="list-group list-group-flush">
@@ -94,6 +121,17 @@
             </div>
         </div>
     </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+       $(document).ready(function(){
+$(".list-group-item").mouseover(function(){
+$(".show-image").eq($('.list-group-item').index($(this))).show();
+});
+$(".list-group-item").mouseout(function(){
+$(".show-image").eq($('.list-group-item').index($(this))).hide();
+});
+});
+      </script>
 </body>
 </html>
